@@ -5,6 +5,7 @@ function App() {
 
   const handleRating = (star) => {
     setRating(star);
+    console.log("Rating", rating);
   };
 
   return (
@@ -30,7 +31,7 @@ function App() {
         </span>
       ))}
 
-      <h2>Your Rating: {rating}</h2>
+      <h2>Selected Rating: {rating} / 5</h2>
     </div>
   );
 }

@@ -1,9 +1,11 @@
-import ProductRating from "./Assignments/ProductRating";
+import Accordion from "./Assignments/Accordion";
+import AccordionOpen from "./Assignments/AccordionOpen";
 
 function Home() {
   return (
     <>
-      <ProductRating></ProductRating>
+      <Accordion></Accordion>
+      <AccordionOpen></AccordionOpen>
     </>
   );
 }
