@@ -1,9 +1,9 @@
-import CountryState from "./Assignments/CountryState";
+import ProductRating from "./Assignments/ProductRating";
 
 function Home() {
   return (
     <>
-      <CountryState></CountryState>
+      <ProductRating></ProductRating>
     </>
   );
 }
