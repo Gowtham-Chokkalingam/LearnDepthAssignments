@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function App() {
+function ProductRating() {
   const [rating, setRating] = useState(0);
 
   const handleRating = (star) => {
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProductRating;

@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function App() {
-  const countries = ["India", "USA", "Australia"];
+function CountryState() {
   const countryStateData = [
     {
       country: "India",
@@ -65,7 +64,7 @@ function App() {
   const innerContainer = {
     display: "flex",
     gap: "20px",
-    textAlign: "center",
+
     height: "24px",
     margin: "auto",
     justifyContent: "center",
@@ -106,4 +105,4 @@ function App() {
   );
 }
 
-export default App;
+export default CountryState;

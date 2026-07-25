@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function App() {
+function AccordionMultiOpen() {
   const accordionData = [
     {
       id: 1,
@@ -82,4 +82,4 @@ function App() {
   );
 }
 
-export default App;
+export default AccordionMultiOpen;

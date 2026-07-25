@@ -1,11 +1,17 @@
+import ProductRating from "./Assignments/ProductRating";
+import StopWatch from "./Assignments/StopWatch";
 import Accordion from "./Assignments/Accordion";
-import AccordionOpen from "./Assignments/AccordionOpen";
+import CountryState from "./Assignments/CountryState";
+import AccordionMultiOpen from "./Assignments/AccordionMultiOpen";
 
 function Home() {
   return (
     <>
+      <CountryState></CountryState>
+      <StopWatch></StopWatch>
+      <ProductRating></ProductRating>
       <Accordion></Accordion>
-      <AccordionOpen></AccordionOpen>
+      <AccordionMultiOpen></AccordionMultiOpen>
     </>
   );
 }
