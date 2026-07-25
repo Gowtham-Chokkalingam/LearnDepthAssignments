@@ -17,7 +17,6 @@ function ProductList() {
     },
   ];
 
-  // Reusable card style
   const cardStyle = {
     width: "180px",
     color: "black",
@@ -30,7 +29,6 @@ function ProductList() {
     boxShadow: "2px 2px 5px gray",
   };
 
-  // Grid(Container) Style
   const containerStyle = {
     display: "flex",
     gap: "20px",
@@ -38,7 +36,6 @@ function ProductList() {
     justifyContent: "center",
     flexWrap: "wrap",
   };
-
   return (
     <div style={containerStyle}>
       {products.map((product, index) => (

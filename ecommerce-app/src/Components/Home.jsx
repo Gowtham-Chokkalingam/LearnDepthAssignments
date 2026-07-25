@@ -1,12 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Product from "./Product";
-import ProductCheckBox from "./ProductCheckBox";
+import RenderingListKeys from "./Assignments/RenderingListKeys";
 
 function Home() {
   return (
     <>
-      <Product></Product>
+      <RenderingListKeys></RenderingListKeys>
     </>
   );
 }
