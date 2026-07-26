@@ -4,27 +4,23 @@ function App() {
   const accordionData = [
     {
       id: 1,
-      title: "What is React?",
-      content:
-        "React is a JavaScript library used for building user interfaces.",
+      title: "Section 1",
+      content: "content for section 1",
     },
     {
       id: 2,
-      title: "What is JSX?",
-      content:
-        "JSX is a syntax extension that allows writing HTML-like code in JavaScript.",
+      title: "Section 2",
+      content: "content for section 2",
     },
     {
       id: 3,
-      title: "What is useState?",
-      content:
-        "useState is a React Hook used to manage state inside functional components.",
+      title: "Section 3",
+      content: "content for section 3",
     },
     {
       id: 4,
-      title: "What is Virtual DOM?",
-      content:
-        "Virtual DOM is a lightweight copy of the real DOM that improves rendering performance.",
+      title: "Section 4",
+      content: "content for section 4",
     },
   ];
 

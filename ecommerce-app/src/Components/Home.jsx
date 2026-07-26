@@ -7,11 +7,11 @@ import AccordionMultiOpen from "./Assignments/AccordionMultiOpen";
 function Home() {
   return (
     <>
-      <CountryState></CountryState>
-      <StopWatch></StopWatch>
-      <ProductRating></ProductRating>
+      {/* <CountryState></CountryState> */}
+      {/* <StopWatch></StopWatch> */}
+      {/* <ProductRating></ProductRating> */}
       <Accordion></Accordion>
-      <AccordionMultiOpen></AccordionMultiOpen>
+      {/* <AccordionMultiOpen></AccordionMultiOpen> */}
     </>
   );
 }

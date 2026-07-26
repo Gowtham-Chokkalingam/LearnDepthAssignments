@@ -55,8 +55,8 @@ function AccordionMultiOpen() {
           <div
             onClick={() => handleAccordion(section.id)}
             style={{
-              padding: "15px",
               cursor: "pointer",
+              padding: "15px",
               backgroundColor: openSections.includes(section.id)
                 ? "#87CEEB"
                 : "#f2f2f2",
