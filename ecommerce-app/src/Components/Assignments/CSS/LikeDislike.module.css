@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.likeBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.likeBtn:hover {
+  background-color: darkgreen;
+}
+
+.dislikeBtn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dislikeBtn:hover {
+  background-color: darkred;
+}

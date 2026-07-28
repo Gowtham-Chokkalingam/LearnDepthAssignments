@@ -1,7 +1,8 @@
 import ProductRating from "./Assignments/ProductRating";
 import StopWatch from "./Assignments/StopWatch";
 import Accordion from "./Assignments/Accordion";
-import CountryState from "./Assignments/CountryState";
+import Products from "./Assignments/Products";
+import LikeDislikeMain from "./Assignments/LikeDislikeMain";
 import AccordionMultiOpen from "./Assignments/AccordionMultiOpen";
 
 function Home() {
@@ -10,7 +11,8 @@ function Home() {
       {/* <CountryState></CountryState> */}
       {/* <StopWatch></StopWatch> */}
       {/* <ProductRating></ProductRating> */}
-      <Accordion></Accordion>
+      <Products></Products>
+      <LikeDislikeMain></LikeDislikeMain>
       {/* <AccordionMultiOpen></AccordionMultiOpen> */}
     </>
   );
