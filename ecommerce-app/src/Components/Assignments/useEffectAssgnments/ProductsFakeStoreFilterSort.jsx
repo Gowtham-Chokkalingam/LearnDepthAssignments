@@ -9,7 +9,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
-
+  const [sortOption, setSortOption] = useState("");
   useEffect(() => {
     async function fetchProducts() {
       try {
@@ -58,6 +58,44 @@ function App() {
     console.log("filtered", filtered);
   }
 
+  function handleSortFilter(category, min, max, sort) {
+    let filtered = [...products];
+
+    // Category Filter
+    if (category !== "All") {
+      filtered = filtered.filter((product) => product.category === category);
+    }
+
+    // Min Price
+    if (min !== "") {
+      filtered = filtered.filter((product) => product.price >= Number(min));
+    }
+
+    // Max Price
+    if (max !== "") {
+      filtered = filtered.filter((product) => product.price <= Number(max));
+    }
+
+    // Sorting
+    if (sort === "low-high") {
+      filtered.sort((a, b) => a.price - b.price);
+    }
+
+    if (sort === "high-low") {
+      filtered.sort((a, b) => b.price - a.price);
+    }
+
+    if (sort === "rating") {
+      filtered.sort((a, b) => b.rating.rate - a.rating.rate);
+    }
+
+    if (sort === "popularity") {
+      filtered.sort((a, b) => b.rating.count - a.rating.count);
+    }
+
+    setFilteredProducts(filtered);
+  }
+
   function handleCategoryChange(e) {
     const category = e.target.value;
 
@@ -100,14 +138,24 @@ function App() {
             </option>
           ))}
         </select>
-        <select value={selectedCategory} onChange={handleCategoryChange}>
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
+        <select
+          value={sortOption}
+          onChange={(e) => {
+            setSortOption(e.target.value);
+            handleSortFilter(
+              selectedCategory,
+              minPrice,
+              maxPrice,
+              e.target.value,
+            );
+          }}
+        >
+          <option value="">-- Sort By --</option>
+          <option value="low-high">Price: Low → High</option>
+          <option value="high-low">Price: High → Low</option>
+          <option value="rating">Rating: High → Low</option>
+          <option value="popularity">Popularity</option>
         </select>
-
         <input
           type="number"
           placeholder="Min Price"

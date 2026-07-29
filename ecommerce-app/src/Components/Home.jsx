@@ -2,7 +2,7 @@ import ProductRating from "./Assignments/ProductRating";
 import StopWatch from "./Assignments/StopWatch";
 import Accordion from "./Assignments/Accordion";
 import Products from "./Assignments/useEffectAssgnments/Products";
-import ProductsFakeStoreRangeFilter from "./Assignments/useEffectAssgnments/ProductsFakeStoreRangeFilter";
+import ProductsFakeStoreFilterSort from "./Assignments/useEffectAssgnments/ProductsFakeStoreFilterSort";
 import LikeDislikeMain from "./Assignments/LikeDislikeMain";
 import AccordionMultiOpen from "./Assignments/AccordionMultiOpen";
 
@@ -12,7 +12,7 @@ function Home() {
       {/* <CountryState></CountryState> */}
       {/* <StopWatch></StopWatch> */}
       {/* <ProductRating></ProductRating> */}
-      <ProductsFakeStoreRangeFilter></ProductsFakeStoreRangeFilter>
+      <ProductsFakeStoreFilterSort></ProductsFakeStoreFilterSort>
 
       {/* <AccordionMultiOpen></AccordionMultiOpen> */}
     </>
