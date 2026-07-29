@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin: 20px 0;
+}
+
+.button,
+.activeButton {
+  padding: 10px 18px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button {
+  background: #ddd;
+}
+
+.activeButton {
+  background: royalblue;
+  color: white;
+}
+
+.productContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 230px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+}
+
+.card img {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 15px;
+}
