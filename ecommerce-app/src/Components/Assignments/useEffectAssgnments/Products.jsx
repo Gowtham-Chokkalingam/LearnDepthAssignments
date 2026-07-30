@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 
 function Products() {
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [category, setCategory] = useState([
+    "All",
     "jewelery",
     "electronics",
     "men's clothing",

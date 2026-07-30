@@ -1,12 +1,11 @@
 .container {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* Makes items vertical */
-  align-items: center; /* Centers items horizontally */
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .card {
   width: 220px;
   padding: 20px;

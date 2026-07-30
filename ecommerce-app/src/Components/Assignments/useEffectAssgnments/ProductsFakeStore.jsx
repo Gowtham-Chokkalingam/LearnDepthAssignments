@@ -67,7 +67,7 @@ function App() {
       <div className="productContainer">
         {filteredProducts.map((product) => (
           <div className="card" key={product.id}>
-            <img src={product.image} alt={product.title} />
+            {/* <img src={product.image} alt={product.title} /> */}
 
             <h3>{product.title}</h3>
 
