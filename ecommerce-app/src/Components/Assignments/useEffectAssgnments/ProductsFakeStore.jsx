@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Fake Store Products</h1>
+      <h1>Products</h1>
 
       <div className="buttonContainer">
         {categories.map((category) => (

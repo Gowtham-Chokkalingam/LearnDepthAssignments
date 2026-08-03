@@ -1,10 +1,5 @@
-import ProductRating from "./Assignments/ProductRating";
-import StopWatch from "./Assignments/StopWatch";
-import Accordion from "./Assignments/Accordion";
-import Products from "./Assignments/useEffectAssgnments/Products";
-import ProductsFakeStore from "./Assignments/useEffectAssgnments/ProductsFakeStore";
+import ProductsFakeStoreFilterSort from "./Assignments/useEffectAssgnments/ProductsFakeStoreFilterSort";
 import LikeDislikeMain from "./Assignments/LikeDislikeMain";
-import AccordionMultiOpen from "./Assignments/AccordionMultiOpen";
 
 function Home() {
   return (
@@ -12,8 +7,8 @@ function Home() {
       {/* <CountryState></CountryState> */}
       {/* <StopWatch></StopWatch> */}
       {/* <ProductRating></ProductRating> */}
-      <ProductsFakeStore></ProductsFakeStore>
-
+      <ProductsFakeStoreFilterSort></ProductsFakeStoreFilterSort>
+      <LikeDislikeMain></LikeDislikeMain>
       {/* <AccordionMultiOpen></AccordionMultiOpen> */}
     </>
   );

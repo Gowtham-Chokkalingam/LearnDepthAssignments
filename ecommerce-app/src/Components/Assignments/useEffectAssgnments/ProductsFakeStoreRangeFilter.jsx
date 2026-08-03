@@ -100,13 +100,6 @@ function App() {
             </option>
           ))}
         </select>
-        <select value={selectedCategory} onChange={handleCategoryChange}>
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
 
         <input
           type="number"
@@ -137,18 +130,18 @@ function App() {
             <div
               key={product.id}
               style={{
-                width: "220px",
+                width: "820px",
                 border: "1px solid gray",
                 padding: "15px",
                 borderRadius: "8px",
               }}
             >
-              <img
+              {/* <img
                 src={product.image}
                 alt={product.title}
                 width="100"
                 height="120"
-              />
+              /> */}
 
               <h4>{product.title}</h4>
 
